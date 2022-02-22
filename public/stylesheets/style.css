@@ -11,8 +11,32 @@ a {
 nav {
   background-color: rgba(169, 169, 169, 0.317);
   padding: 20px;
+  display: flex;
+  justify-content: space-around;
 }
 
 footer {
-margin-top: auto;
+display: flex;
+justify-content: center;
+align-items: flex-end;
+}
+h1, h2 {
+  display: flex;
+  justify-content: center;
+}
+
+#projects {
+  background-color: rgba(169, 169, 169, 0.317);
+  padding: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+#projects>a {
+  padding: 10px;
+}
+#img{
+  display: flex;
+  flex-direction: column;
 }
