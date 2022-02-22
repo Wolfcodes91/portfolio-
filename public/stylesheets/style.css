@@ -1,8 +1,18 @@
 body {
   padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
 }
 
 a {
   color: #00B7FF;
+}
+nav {
+  background-color: rgba(169, 169, 169, 0.317);
+  padding: 20px;
+}
+
+footer {
+margin-top: auto;
 }
