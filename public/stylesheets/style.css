@@ -13,6 +13,15 @@ nav {
   padding: 20px;
   display: flex;
   justify-content: space-around;
+  align-items: center;
+  border-radius: 1.5vmin;
+}
+
+#about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 footer {
@@ -24,12 +33,13 @@ h1, h2 {
 }
 
 #projects {
-  background-color: rgba(169, 169, 169, 0.317);
-  padding: 10vmin;
+  /* background-color: rgba(169, 169, 169, 0.317); */
+  padding: 1vmin;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+
 }
 #projects>a {
   padding: 1vmin;
@@ -39,10 +49,15 @@ h1, h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
 }
 
 img {
   width: 20vmin;
   height: 15vmin;
   padding: 1vmin;
+  border-radius: 2.5vmin;
+}
+img:hover {
+ border: solid 0.5vmin blue;
 }
