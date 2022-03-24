@@ -16,7 +16,6 @@ body {
 .container {
   width: 100%;
   height: 100%;
-  /* css smooth scroll */
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
@@ -61,13 +60,14 @@ nav {
   background-color: lightgray;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr 2fr;
+  grid-template-rows: 2fr 1fr;
   justify-content: center;
   align-items: center;
   grid-auto-rows: 1fr;
 }
+
 #blurb{
-  padding-top: 3vmin;
+  padding: 3vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -76,53 +76,47 @@ nav {
   background: linear-gradient(to bottom left, lightgray,rgb(194, 190, 190), beige, lightgray);
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
-  padding: 1vmin;
-  margin: 5vmin;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  margin: 8vmin;
   border-radius: 1vmin;
 }
 
+#skills {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
 #sect1 {
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 3;
-  grid-row-end: 4;
   margin: 1vmin;
   border-radius: 1vmin;
   height: 12vmin;
   padding: 1vmin;
 }
 #sect2 {
+  color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  grid-row-start: 3;
-  grid-row-end: 4;
   margin: 1vmin;
   border-radius: 1vmin;
   height: 12vmin;
   padding: 1vmin;
 }
 #sect3 {
+  color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  background-color: antiquewhite;
-  grid-column-start: 3;
-  grid-column-end: 4;
-  grid-row-start: 3;
-  grid-row-end: 4;
   margin: 1vmin;
   border-radius: 1vmin;
   height: 12vmin;
@@ -139,6 +133,7 @@ h2 {
 }
 
 #projects {
+  padding-top: 3vmin;
   background: linear-gradient(lightgray, gray, black);
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -148,14 +143,14 @@ h2 {
 
 .img {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   width: 100%;
 }
 
 .pics {
-  width: 60vmin;
-  height: 35vmin;
+  width: 55vmin;
+  height: 30vmin;
   border-radius: 1.5vmin;
 }
 .pics:hover {
@@ -163,24 +158,36 @@ h2 {
 }
 
 #img1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 #img2 {
+  color: white;
+  display: flex;
+  flex-direction: column;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 1;
   grid-row-end: 2;
 }
 #img3 {
+  color: white;
+  display: flex;
+  flex-direction: column;
   grid-column-start: 1;
   grid-column-end: 2;
   grid-row-start: 2;
   grid-row-end: 3;
 }
 #img4 {
+  color: white;
+  display: flex;
+  flex-direction: column;
   grid-column-start: 2;
   grid-column-end: 3;
   grid-row-start: 2;
@@ -188,14 +195,13 @@ h2 {
 }
 
 #contact {
+  padding-top: 5vmin;
   background-color: black;
   display: grid;
   justify-items: center;
   align-items: center;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding-top: 1vmin;
-  padding-bottom: 10vmin;
 }
 
 #link1, #link2, #link3, #link4 {
@@ -247,6 +253,17 @@ h2 {
   text-decoration: underline;
 }
 
+.skillLogosMult {
+  height: 10vmin;
+  width: 33vmin;
+}
+
+.skillLogos {
+  padding: 1vmin;
+  height: 10vmin;
+  width: 10vmin;
+}
+
 #gmailLogo {
   width: 10vmin;
   height: 10vmin;
@@ -258,8 +275,8 @@ h2 {
 }
 
 #githubLogo {
-  width: 19vmin;
-  height: 19vmin;
+  width: 20vmin;
+  height: 20vmin;
 }
 #resumeLogo {
   width: 14vmin;
