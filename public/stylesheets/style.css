@@ -1,6 +1,7 @@
 body {
-  padding: 50px;
+  padding: 5vmin;
   font-family: 'Nunito', sans-serif;
+  font-size: 1.5vmin;
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -8,8 +9,8 @@ body {
   background-image: radial-gradient(grey 20%, transparent 20%),
   radial-gradient(darkgrey 20%, transparent 20%);
   background-color: black;
-  background-position: 0 0, 50px 50px;
-  background-size: 100px 100px;
+  background-position: 0 0, 2vmin 2vmin;
+  background-size: 4vmin 4vmin;
 }
 
 .container {
@@ -137,10 +138,10 @@ h2 {
 }
 
 #projects {
-  /* padding-top: 2vmin; */
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+  width: 100%
 }
 
 .img {
