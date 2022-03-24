@@ -1,36 +1,61 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title><%= title %></title>
-    <link rel='stylesheet' href='/stylesheets/style.css' />
-  </head>
-  <body>
-    <section>
-    <hr>
+
+<head>
+  <title>
+    <%= title %>
+  </title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <section class="container">
+  <div id="navbar">
     <nav>
       <h3>Dave Wolfberg</h3>
-      <a href="https://github.com/Wolfcodes91">Github</a>
-      <a href="https://www.linkedin.com/in/davewolfberg/">LinkedIn</a>
-      <a class="nav-link" href="images/Dave_Wolfberg_Resume_3.pdf" target="_blank">Resume</a>
-      <a href="mailto:dave.m.wolfberg@gmail.com">Email Me</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
     </nav>
-    <hr>
-    
-    <div id="about">
-      <h2>About Me</h2>
-      <p>Hi, my name is Dave Wolfberg, I am a software engineer</p>
-      <h5>Languages</h5>
+  </div>
+  
+    <section id="about">
+      <div id="blurb">
+        <p>
+          Hi, my name is Dave Wolfberg, I am a software engineer.
+          Graduate of General Assembly's Software Engineering Immersive program.
+        </p>
+      </div>
+      <div id="sect1">
+        <h5>Languages</h5>
         <ul>
           <li>HTML</li>
           <li>CSS</li>
           <li>Javascript</li>
           <li>Python</li>
         </ul>
-    </div>
-    <hr>
-    <h2>Projects</h2>
-    <hr>
-    <div id="projects">
+      </div>
+      <div id="sect2">
+        <h5>Frameworks</h5>
+        <ul>
+          <li>React</li>
+          <li>Django</li>
+          <li>Express</li>
+        </ul>
+      </div>
+      <div id="sect3">
+        <h5>Databases</h5>
+        <ul>
+          <li>MongoDB</li>
+          <li>Mongoose</li>
+          <li>PostgreSQL</li>
+        </ul>
+      </div>
+    </section>
+    <section id="projects">
       <div id="img">
         <a href="https://pedalboard-buddy.herokuapp.com/">
           <img src="images/Pedalboard Buddy.png" alt="">
@@ -51,8 +76,14 @@
           <img src="images/Simon.png" alt="">
         </a>
       </div>
-    </div>
     </section>
-    <footer>Thanks for visiting!</footer>
-  </body>
+    <section id="contact">
+      <a href="https://github.com/Wolfcodes91">Github</a>
+      <a href="https://www.linkedin.com/in/davewolfberg/">LinkedIn</a>
+      <a class="nav-link" href="images/Dave_Wolfberg_Resume_3.pdf" target="_blank">Resume</a>
+      <a href="mailto:dave.m.wolfberg@gmail.com">Email Me</a>
+    </section>
+  </section>
+</body>
+
 </html>
