@@ -6,11 +6,11 @@ body {
   flex-direction: column;
   height: 100vh;
   overflow: hidden;
-  background-image: radial-gradient(grey 20%, transparent 20%),
-  radial-gradient(darkgrey 20%, transparent 20%);
+  background-image: radial-gradient(gray 20%, transparent 20%),
+  radial-gradient(lightgray 20%, transparent 20%);
   background-color: black;
-  background-position: 0 0, 2vmin 2vmin;
-  background-size: 4vmin 4vmin;
+  background-position: 0 0, 1vmin 1vmin;
+  background-size: 2vmin 2vmin;
 }
 
 .container {
@@ -44,6 +44,7 @@ section {
 
 nav {
   background-color: rgb(1, 1, 75);
+  opacity: 70%;
   color: white;
   width: 85%;
   display: flex;
@@ -57,25 +58,28 @@ nav {
 }
 
 #about {
+  background-color: lightgray;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 2fr;
+  grid-template-rows: 1fr 2fr 2fr;
   justify-content: center;
   align-items: center;
   grid-auto-rows: 1fr;
 }
 #blurb{
+  padding-top: 3vmin;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: flex-start;
-  background-color: antiquewhite;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border: solid 0.5vmin lightgray;
+  background: linear-gradient(to bottom left, lightgray,rgb(194, 190, 190), beige, lightgray);
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 1;
-  grid-row-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
   padding: 1vmin;
-  margin: 1vmin;
+  margin: 5vmin;
   border-radius: 1vmin;
 }
 
@@ -87,8 +91,8 @@ nav {
   background-color: antiquewhite;
   grid-column-start: 1;
   grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   margin: 1vmin;
   border-radius: 1vmin;
   height: 12vmin;
@@ -102,8 +106,8 @@ nav {
   background-color: antiquewhite;
   grid-column-start: 2;
   grid-column-end: 3;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   margin: 1vmin;
   border-radius: 1vmin;
   height: 12vmin;
@@ -117,17 +121,14 @@ nav {
   background-color: antiquewhite;
   grid-column-start: 3;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
   margin: 1vmin;
   border-radius: 1vmin;
   height: 12vmin;
   padding: 1vmin;
 }
 
-footer {
-  bottom: 0;
-}
 h1, h2 {
   display: flex;
   justify-content: center;
@@ -138,6 +139,7 @@ h2 {
 }
 
 #projects {
+  background: linear-gradient(lightgray, gray, black);
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -151,12 +153,12 @@ h2 {
   width: 100%;
 }
 
-img {
+.pics {
   width: 60vmin;
   height: 35vmin;
   border-radius: 1.5vmin;
 }
-img:hover {
+.pics:hover {
  border: solid 0.5vmin turquoise;
 }
 
@@ -186,6 +188,7 @@ img:hover {
 }
 
 #contact {
+  background-color: black;
   display: grid;
   justify-items: center;
   align-items: center;
@@ -243,3 +246,23 @@ img:hover {
   border: solid 1vmin turquoise;
   text-decoration: underline;
 }
+
+#gmailLogo {
+  width: 10vmin;
+  height: 10vmin;
+}
+
+#linkedInLogo {
+  width: 14vmin;
+  height: 14vmin;
+}
+
+#githubLogo {
+  width: 19vmin;
+  height: 19vmin;
+}
+#resumeLogo {
+  width: 14vmin;
+  height: 14vmin;
+}
+
