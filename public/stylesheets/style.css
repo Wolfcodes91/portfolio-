@@ -7,12 +7,6 @@ body {
   overflow: hidden;
 }
 
-#bannerimg {
-  box-shadow: 3px 5px 5px rgb(155, 155, 155);
-  width: 80%;
-  align-self: center;
-}
-
 .container {
   margin-left: 16vw;
   width: 85vw;
@@ -64,78 +58,53 @@ nav {
 #projectsNav > a {
  margin: 1vmin;
 }
-
+#projectsNav > h4 {
+ padding: 1vmin;
+ color: black;
+ border-radius: 1.5vmin;
+}
 #thankyou {
-  /* height: 3vh; */
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
+ color: black;
+ width: 100%;
+ border-radius: 1.5vmin;
 }
 
 #about {
+  padding: 3vmin;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
-  /* align-items: center; */
+  align-items: center;
 }
 
-/* #skills {
-  margin-top: 10vmin;
-  background-color: black;
+#banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#bannerimg {
+  box-shadow: 3px 5px 5px rgb(155, 155, 155);
+  width: 80%;
+}
+
+#blurb {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-} */
+}
 
-#sect1 {
-  color: white;
+#pedalboardbuddy, #bottomsup, #wolfbergr, #simon {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  margin: 1vmin;
-  border-radius: 1vmin;
-  height: 12vmin;
-  padding: 1vmin;
-}
-#sect2 {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 1vmin;
-  border-radius: 1vmin;
-  height: 12vmin;
-  padding: 1vmin;
-}
-#sect3 {
-  color: white;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin: 1vmin;
-  border-radius: 1vmin;
-  height: 12vmin;
-  padding: 1vmin;
+  justify-content: flex-start;
 }
 
-h1, h2 {
+#skills {
   display: flex;
   justify-content: center;
-}
-
-h2 {
-  font-size: 2vmin;
-}
-
-#projects {
-  padding: 5vmin;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
-  width: 100%
+  align-items: center;
 }
 
 .img {
@@ -147,8 +116,8 @@ h2 {
 }
 
 .pics {
-  width: 55vmin;
-  height: 30vmin;
+  width: 70vmin;
+  height: 40vmin;
   border-radius: 1.5vmin;
   box-shadow: 3px 5px 5px rgb(155, 155, 155);
 }
@@ -159,22 +128,22 @@ h2 {
 #img1 {
   display: flex;
   flex-direction: column;
-  
 }
 #img2 {
   display: flex;
   flex-direction: column;
- 
 }
 #img3 {
   display: flex;
-  flex-direction: column;
-  
+  flex-direction: column; 
 }
 #img4 {
   display: flex;
   flex-direction: column;
-  
+}
+
+#skills {
+  display: flex;
 }
 
 #contact {
@@ -204,14 +173,14 @@ h2 {
 }
 
 .skillLogosMult {
-  height: 10vmin;
-  width: 33vmin;
+  height: 5vmin;
+  width: 18vmin;
 }
 
 .skillLogos {
   padding: 1vmin;
-  height: 10vmin;
-  width: 10vmin;
+  height: 5vmin;
+  width: 5vmin;
 }
 
 #gmailLogo {
@@ -233,7 +202,7 @@ h2 {
   height: 2.5vmin;
 }
 
-@media only screen and (min-width: 1000px) {
+/* @media only screen and (min-width: 1000px) {
 
   #skills {
     display: flex;
@@ -252,4 +221,4 @@ h2 {
     grid-template-rows: 1fr 1fr;
     width: 100%
   }
-}
+} */
