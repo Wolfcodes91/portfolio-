@@ -22,9 +22,9 @@ a {
   color: white;
 }
 
-a:hover {
+/* a:hover {
   color: purple;
-}
+} */
 
 section {
   display: flex;
@@ -34,7 +34,7 @@ section {
 
 nav {
   font-size: 2vmin;
-  background-color: rgba(1, 1, 75, 0.8);
+  background-color: rgba(1, 1, 75, 0.6);
   color: white;
   height: 99.5vh;
   width: 15vw;
@@ -48,6 +48,21 @@ nav {
   top: 0;
   z-index: 1;
   border: solid 0.2vmin turquoise;
+}
+
+.button {
+  background-color: rgba(1, 1, 75, 1);
+  border: solid 1px lightgray;
+  border-radius: 1vmin;
+  padding: 1vmin;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
+}
+
+.button:hover {
+  background-color: rgb(14, 14, 189);
+  box-shadow: 5px 5px 10px black;
+  padding: 1.1vmin;
 }
 
 #projectsNav {
