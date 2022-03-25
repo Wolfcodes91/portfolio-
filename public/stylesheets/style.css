@@ -45,7 +45,7 @@ nav {
   background-color: rgb(1, 1, 75);
   opacity: 70%;
   color: white;
-  width: 85%;
+  width: 90%;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -60,10 +60,22 @@ nav {
   background-color: lightgray;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr;
+  grid-template-rows: 2fr 1fr 2fr;
   justify-content: center;
   align-items: center;
   grid-auto-rows: 1fr;
+}
+
+#banner {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  width: 100%;
+}
+
+#banner > img {
+  width: 100%;
 }
 
 #blurb{
@@ -85,8 +97,8 @@ nav {
 #skills {
   grid-column-start: 1;
   grid-column-end: 4;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  grid-row-start: 3;
+  grid-row-end: 4;
 }
 
 #sect1 {
@@ -251,6 +263,14 @@ h2 {
 }
 
 @media only screen and (min-width: 1000px) {
+
+  #skills {
+    display: flex;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 3;
+    grid-row-end: 4;
+  }
 
   #projects {
     padding-top: 3vmin;
