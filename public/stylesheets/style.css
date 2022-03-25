@@ -1,5 +1,5 @@
 body {
-  padding: 5vmin;
+  padding: 2vmin;
   font-family: 'Nunito', sans-serif;
   font-size: 1.5vmin;
   display: flex;
@@ -43,7 +43,7 @@ section {
 
 nav {
   background-color: rgb(1, 1, 75);
-  opacity: 70%;
+  opacity: 80%;
   color: white;
   width: 90%;
   display: flex;
@@ -60,7 +60,7 @@ nav {
   background-color: lightgray;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 2fr 1fr 2fr;
+  grid-template-rows: 1fr 1fr 2fr;
   justify-content: center;
   align-items: center;
   grid-auto-rows: 1fr;
@@ -90,7 +90,7 @@ nav {
   grid-column-end: 4;
   grid-row-start: 1;
   grid-row-end: 2;
-  margin: 8vmin;
+  margin-top: 2vmin;
   border-radius: 1vmin;
 }
 
@@ -145,7 +145,7 @@ h2 {
 }
 
 #projects {
-  padding-top: 3vmin;
+  padding: 5vmin;
   background: linear-gradient(lightgray, gray, black);
   display: grid;
   grid-template-columns: 1fr;
@@ -266,6 +266,8 @@ h2 {
 
   #skills {
     display: flex;
+    justify-content: center;
+    align-items: center;
     grid-column-start: 1;
     grid-column-end: 4;
     grid-row-start: 3;
