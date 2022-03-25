@@ -16,12 +16,10 @@
 </head>
 
 <body>
-  <section class="container">
-    <div id="navbar">
-      <nav>
+    <nav>
+      <div>
         <h3>Dave Wolfberg</h3>
         <a href="#about">About</a>
-        <a href="#projects">Projects</a>
         <div id="contact">
           <a id="link1" href="https://github.com/Wolfcodes91" target="_blank">
             <img id="githubLogo" src="images/GithubLogo.png" alt="">
@@ -36,12 +34,23 @@
             <img id="gmailLogo" src="images/Gmail.png" alt="">
           </a>
         </div>
-      </nav>
-    </div>
+      </div>
+      <div id="projectsNav">
+      <h4>Projects</h4>
+        <a href="#pedalboardbuddy">Pedalboard Buddy</a>
+        <a href="#bottomsup">Bottoms Up!</a>
+        <a href="#wolfbergr">Wolfbergr</a>
+        <a href="#simon">Simon</a>
+      </div>
+      <div id="thankyou">
+        <h4>Thank You</h4>
+      </div>
+    </nav>
 
+  <div class="container">
     <section id="about">
       <div id="banner">
-        <img src="images/Banner.jpeg" alt="">
+        <img id="bannerimg" src="images/Banner.jpeg" alt="">
       </div>
       <div id="blurb">
         <h3>
@@ -64,6 +73,9 @@
           as well as meet some cool new friends.
         </p>
       </div>
+    </section>
+
+    <!-- <section>
       <div id="skills">
         <div id="sect1">
           <img class="skillLogosMult" src="images/LOGOS.png" alt="">
@@ -79,8 +91,9 @@
           <img class="skillLogos" src="images/POSTLOGO.png" alt="">
         </div>
       </div>
-    </section>
-    <section id="projects">
+    </section> -->
+
+    <section id="pedalboardbuddy">
       <div class="img" id="img1">
         <a href="https://pedalboard-buddy.herokuapp.com/" target="_blank">
           <img class="pics" src="images/Pedalboard Buddy Home.png" alt="">
@@ -88,6 +101,9 @@
         <h4>Pedalboard Buddy</h4>
         <p>Created using MERN stack, React-Beautiful-DND, AWS S3, JavaScript</p>
       </div>
+    </section>
+
+    <section id="bottomsup">
       <div class="img" id="img2">
         <a href="https://bottoms-up-app-rad.herokuapp.com/" target="_blank">
           <img class="pics" src="images/BottomsUp.png" alt="">
@@ -95,6 +111,9 @@
         <h4>Bottoms Up!</h4>
         <p>Created using Django, Python, Materialize, TheCocktailDB.com (external API) </p>
       </div>
+    </section>
+
+    <section id="wolfbergr">
       <div class="img" id="img3">
         <a href="https://wolfbergr.herokuapp.com/" target="_blank">
           <img class="pics" src="images/Wolfbergr.png" alt="">
@@ -102,6 +121,9 @@
         <h4>Wolfbergr</h4>
         <p>Created using MEN stack, CSS, JavaScript</p>
       </div>
+    </section>
+
+    <section id="simon">
       <div class="img" id="img4">
         <a href="https://wolfcodes91.github.io/SIMON/" target="_blank">
           <img class="pics" src="images/Simon.png" alt="">
@@ -110,7 +132,7 @@
         <p>Created using HTML, CSS, JavaScript</p>
       </div>
     </section>
-  </section>
+  </div>
 </body>
 
 </html>
