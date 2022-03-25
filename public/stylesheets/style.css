@@ -1,10 +1,11 @@
 body {
   font-family: 'Nunito', sans-serif;
-  font-size: 1.5vmin;
+  font-size: 2vmin;
   display: flex;
   flex-direction: row;
   height: 100vh;
   overflow: hidden;
+  background-color: black;
 }
 
 .container {
@@ -33,10 +34,9 @@ section {
 
 nav {
   font-size: 2vmin;
-  height: 6vmin;
-  background-color: rgba(1, 1, 75, 0.6);
+  background-color: rgba(1, 1, 75, 0.8);
   color: white;
-  height: 100vh;
+  height: 99.5vh;
   width: 15vw;
   display: flex;
   flex-direction: column;
@@ -60,20 +60,23 @@ nav {
 }
 #projectsNav > h4 {
  padding: 1vmin;
- color: black;
+ color: lightgray;
  border-radius: 1.5vmin;
 }
 #thankyou {
- color: black;
+ color: lightgray;
  width: 100%;
  border-radius: 1.5vmin;
+ padding-bottom: 1vmin;
 }
 
 #about {
-  padding: 3vmin;
+  padding: 2vmin;
   display: flex;
   flex-direction: column;
   align-items: center;
+  background-color: rgb(13, 13, 13);
+  color: white;
 }
 
 #banner {
@@ -83,11 +86,22 @@ nav {
 }
 
 #bannerimg {
-  box-shadow: 3px 5px 5px rgb(155, 155, 155);
-  width: 80%;
+  box-shadow: 3px 5px 5px rgb(45, 45, 45);
+  width: 100%;
+}
+
+#profilePicDiv {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#profilePic {
+  width: 20vmin;
 }
 
 #blurb {
+  margin-top: 10vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -95,10 +109,12 @@ nav {
 }
 
 #pedalboardbuddy, #bottomsup, #wolfbergr, #simon {
+  background-color: lightgray;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
+  padding-top: 3vmin;
 }
 
 #skills {
@@ -142,6 +158,14 @@ nav {
   flex-direction: column;
 }
 
+#projectInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 5vmin;
+}
+
 #skills {
   display: flex;
 }
@@ -162,8 +186,8 @@ nav {
   align-items: center;
   text-decoration: none;
   border: solid 0.2vmin black;
-  height: 5vmin;
-  width: 5vmin;
+  height: 5.5vmin;
+  width: 5.5vmin;
   margin: 1vmin;
 }
 
