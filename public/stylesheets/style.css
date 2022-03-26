@@ -184,6 +184,8 @@ nav {
 
 #skills {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #contact {
@@ -218,9 +220,14 @@ nav {
 }
 
 .skillLogos {
-  padding: 1vmin;
+  padding: 0.7vmin;
   height: 5vmin;
   width: 5vmin;
+}
+
+#s3 {
+  height: 7vmin;
+  width: 7vmin;
 }
 
 #gmailLogo {
