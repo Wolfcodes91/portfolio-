@@ -22,6 +22,11 @@ a {
   color: white;
 }
 
+.ghLinks {
+  color:rgb(1, 1, 75);
+  text-decoration: none;
+}
+
 /* a:hover {
   color: purple;
 } */
@@ -58,6 +63,7 @@ nav {
   padding: 1vmin;
   box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
   inset 5px 5px 8px rgba(0,0,0,0.5);
+  text-decoration: none;
 }
 
 .button:hover {
@@ -79,6 +85,15 @@ nav {
  color: lightgray;
  border-radius: 1.5vmin;
 }
+
+.writeUp {
+  background-color: white;
+  text-align: justify;
+  text-justify: inter-word;
+  box-shadow: 3px 5px 5px rgb(155, 155, 155);
+  padding: 2vmin;
+}
+
 #thankyou {
  color: lightgray;
  width: 100%;
