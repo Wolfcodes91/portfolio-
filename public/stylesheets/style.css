@@ -27,6 +27,10 @@ a {
   text-decoration: none;
 }
 
+.guestSignIn {
+  font-size: 1vmin;
+}
+
 /* a:hover {
   color: purple;
 } */
