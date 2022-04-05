@@ -5,7 +5,7 @@ body {
   flex-direction: row;
   height: 100vh;
   overflow: hidden;
-  background-color: black;
+  background-color: rgb(13, 13, 13);
 }
 
 .container {
@@ -19,14 +19,15 @@ body {
 }
 
 .arrow {
-  /* background-color: white; */
   color: rgba(1, 1, 75, 0.6);
   text-decoration: none;
+  font-size: 3vmin;
 }
 
 .arrowDark {
   color: turquoise;
   text-decoration: none;
+  font-size: 3vmin;
 }
 
 .arrow:hover {
@@ -36,8 +37,6 @@ body {
 .arrowDark:hover {
   color: rgb(7, 251, 227);
 }
-
-
 
 a {
   color: white;
@@ -52,10 +51,6 @@ a {
   font-size: 1vmin;
 }
 
-/* a:hover {
-  color: purple;
-} */
-
 section {
   display: flex;
   height: 100vh;
@@ -65,20 +60,21 @@ section {
 nav {
   margin-top: 0.5vmin;
   font-size: 2vmin;
-  background-color: rgba(1, 1, 75, 0.6);
-  color: white;
+  /* background-color: rgba(1, 1, 75, 0.6); */
+  /* background-color: rgb(13, 13, 13); */
+  background-color: whitesmoke;
+  color: rgb(13, 13, 13);
   height: 98.5vh;
   width: 15vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   text-align: center;
-  border-radius: 1.5vmin;
+  border-radius: 0.5vmin;
   position: fixed;
   top: 0;
   z-index: 1;
-  border: solid 0.2vmin turquoise;
 }
 
 .button {
@@ -120,7 +116,7 @@ nav {
 }
 
 #thankyou {
- color: lightgray;
+ color: rgb(13, 13, 13);
  width: 100%;
  border-radius: 1.5vmin;
  padding-bottom: 1vmin;
@@ -200,6 +196,7 @@ nav {
 }
 .pics:hover {
  border: solid 0.5vmin turquoise;
+ box-shadow: 5px 5px 10px black;
 }
 
 #img1 {
@@ -235,9 +232,10 @@ nav {
 }
 
 #contact {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 #link1, #link2, #link3, #link4 {
@@ -250,14 +248,17 @@ nav {
   align-items: center;
   text-decoration: none;
   border: solid 0.2vmin rgba(1, 1, 75, 1);
-  height: 5.5vmin;
-  width: 5.5vmin;
+  height: 7.5vmin;
+  width: 7.5vmin;
   margin: 1vmin;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.5),
+  inset 5px 5px 8px rgba(0,0,0,0.5);
 }
 
 #link1:hover, #link2:hover, #link3:hover, #link4:hover {
   border: solid 0.2vmin turquoise;
   text-decoration: underline;
+  box-shadow: 5px 5px 10px black;
 }
 
 .skillLogosMult {
@@ -277,20 +278,20 @@ nav {
 }
 
 #gmailLogo {
-  width: 2vmin;
-  height: 2vmin;
-}
-
-#linkedInLogo {
-  width: 3vmin;
-  height: 3vmin;
-}
-
-#githubLogo {
   width: 4vmin;
   height: 4vmin;
 }
+
+#linkedInLogo {
+  width: 6vmin;
+  height: 6vmin;
+}
+
+#githubLogo {
+  width: 7.5vmin;
+  height: 7.5vmin;
+}
 #resumeLogo {
-  width: 2.5vmin;
-  height: 2.5vmin;
+  width: 5vmin;
+  height: 5vmin;
 }
