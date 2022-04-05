@@ -18,6 +18,27 @@ body {
   color: black;
 }
 
+.arrow {
+  /* background-color: white; */
+  color: rgba(1, 1, 75, 0.6);
+  text-decoration: none;
+}
+
+.arrowDark {
+  color: turquoise;
+  text-decoration: none;
+}
+
+.arrow:hover {
+  color: turquoise;
+}
+
+.arrowDark:hover {
+  color: rgb(7, 251, 227);
+}
+
+
+
 a {
   color: white;
 }
@@ -141,6 +162,11 @@ nav {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-justify: inter-word;
+}
+
+#blurb > p {
+  text-justify: inter-word;
 }
 
 #pedalboardbuddy, #bottomsup, #wolfbergr, #simon {
@@ -148,7 +174,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   padding-top: 3vmin;
 }
 
@@ -167,7 +193,7 @@ nav {
 }
 
 .pics {
-  width: 70vmin;
+  width: 60vmin;
   height: 40vmin;
   border-radius: 1.5vmin;
   box-shadow: 3px 5px 5px rgb(155, 155, 155);
@@ -194,6 +220,7 @@ nav {
 }
 
 #projectInfo {
+  margin-top: -3vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -267,24 +294,3 @@ nav {
   width: 2.5vmin;
   height: 2.5vmin;
 }
-
-/* @media only screen and (min-width: 1000px) {
-
-  #skills {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    grid-column-start: 1;
-    grid-column-end: 4;
-    grid-row-start: 3;
-    grid-row-end: 4;
-  }
-
-  #projects {
-    padding-top: 3vmin;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    width: 100%
-  }
-} */
