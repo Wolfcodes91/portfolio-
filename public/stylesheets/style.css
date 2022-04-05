@@ -170,7 +170,7 @@ nav {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   padding-top: 3vmin;
 }
 
@@ -217,7 +217,6 @@ nav {
 }
 
 #projectInfo {
-  margin-top: -3vmin;
   display: flex;
   flex-direction: column;
   justify-content: center;
