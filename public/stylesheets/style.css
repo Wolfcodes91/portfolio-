@@ -294,3 +294,10 @@ nav {
   width: 5vmin;
   height: 5vmin;
 }
+
+@media only screen and (max-width: 1230px) {
+  #blurb p {
+    width: 60vmin;
+  }
+
+}
