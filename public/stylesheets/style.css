@@ -30,6 +30,9 @@ body {
   text-decoration: none;
   font-size: 3vmin;
 }
+.arrowContainer {
+  padding: 2vmin;
+}
 
 .arrow:hover {
   color: turquoise;
@@ -298,6 +301,20 @@ nav {
 @media only screen and (max-width: 1230px) {
   #blurb p {
     width: 60vmin;
+  }
+  .arrow {
+    color: rgba(1, 1, 75, 0.6);
+    text-decoration: none;
+    font-size: 8vmin;
+  }
+  
+  .arrowDark {
+    color: turquoise;
+    text-decoration: none;
+    font-size: 8vmin;
+  }
+  .arrowContainer {
+    padding: 10vmin;
   }
 
 }
