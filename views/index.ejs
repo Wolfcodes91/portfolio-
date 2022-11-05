@@ -9,34 +9,35 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" rel="stylesheet">
+
 </head>
 
 <body>
   <nav>
     <div>
-      <h4>Dave Wolfberg</h4>
+      <h4 id="myName">Dave Wolfberg</h4>
       <div id="contact">
-        <a id="link1" href="https://github.com/Wolfcodes91" target="_blank">
-          <img id="githubLogo" src="images/GithubLogo.png" alt="">
+        <a class="linkIcon" data-panel="1" id="link1" href="https://github.com/Wolfcodes91" target="_blank">
+          <img id="githubLogo" class="1" src="images/GithubLogo.png" alt="">
         </a>
-        <a id="link2" href="https://www.linkedin.com/in/davewolfberg/" target="_blank">
-          <img id="linkedInLogo" src="images/linkedin-.png" alt="">
+        <a class="linkIcon" data-panel="4" id="link2" href="https://www.linkedin.com/in/davewolfberg/" target="_blank">
+          <img id="linkedInLogo" class="4" src="images/linkedin-.png" alt="">
         </a>
-        <a id="link3" class="nav-link" href="images/Dave_Wolfberg_Resume.pdf" target="_blank">
-          <img id="resumeLogo" src="images/ResumeLogo.png" alt="">
+        <a class="linkIcon" data-panel="7" id="link3" href="images/Dave_Wolfberg_Resume.pdf" target="_blank">
+          <img id="resumeLogo" class="7" src="images/ResumeLogo.png" alt="">
         </a>
-        <a id="link4" href="mailto:dave.m.wolfberg@gmail.com" target="_blank">
-          <img id="gmailLogo" src="images/Gmail.png" alt="">
+        <a class="linkIcon" data-panel="25" id="link4" href="mailto:dave.m.wolfberg@gmail.com" target="_blank">
+          <img id="gmailLogo" class="25" src="images/Gmail.png" alt="">
         </a>
       </div>
     </div>
-      <div id="projectsNav">
-        <a class="button" href="#about">About Me</a>
-        <a class="button" href="#pedalboardbuddy">Pedalboard Buddy</a>
-        <a class="button" href="#bottomsup">Bottoms Up!</a>
-        <a class="button" href="#wolfbergr">Wolfbergr</a>
-        <a class="button" href="#simon">Simon</a>
-      </div>
+    <div id="projectsNav">
+      <a class="button" href="#about">About Me</a>
+      <a class="button" href="#pedalboardbuddy">Pedalboard Buddy</a>
+      <a class="button" href="#bottomsup">Bottoms Up!</a>
+      <a class="button" href="#wolfbergr">Wolfbergr</a>
+      <a class="button" href="#simon">Simon</a>
+    </div>
     <div id="thankyou">
       <h4>Thank You!</h4>
     </div>
@@ -51,26 +52,27 @@
         <div id="profilePicDiv">
           <img id="profilePic" src="images/IMG_3389.jpg" alt="">
         </div>
-        <h3>
+        <h3 id="chuckNorris">
           Hi, my name is Dave Wolfberg, I am a Full Stack Web Developer.
         </h3>
         <h5>Professional Summary:</h5>
         <p>
-          Full Stack Software Developer with experience building a diverse set of frontend and backend projects. 
-          Lifelong learner with a growth mindset who is excited to contribute to impactful projects. 
-          Patient puzzle solver with the ability to stay calm and collected in high pressure situations 
-          and drive to deliver the highest quality work under stringent time restrictions. 
-          Charismatic communicator and highly collaborative professional 
-          who has spent a decade on the road as a touring musician developing grit, flexibility, and a strong team ethic.
+          Full Stack Software Developer with experience building a diverse set of frontend and backend projects.
+          Lifelong learner with a growth mindset who is excited to contribute to impactful projects.
+          Patient puzzle solver with the ability to stay calm and collected in high pressure situations
+          and drive to deliver the highest quality work under stringent time restrictions.
+          Charismatic communicator and highly collaborative professional
+          who has spent a decade on the road as a touring musician developing grit, flexibility, and a strong team
+          ethic.
         </p>
         <h5>About Me:</h5>
         <p>
-          Some of my favorite hobbies are eating, meditating, hiking, spending time with my friends, 
+          Some of my favorite hobbies are eating, meditating, hiking, spending time with my friends,
           noodling on guitar, watching code tutorials, and solving puzzles.
         </p>
-        <p> 
+        <p>
           Please enjoy some of my favorite projects below!
-          Click the pictures to open the Live Apps. 
+          Click the pictures to open the Live Apps.
         </p>
       </div>
       <div class="arrowContainer">
@@ -101,12 +103,13 @@
       </div>
       <div id="projectInfo">
         <p class="writeUp">
-          <a class="ghLinks" href="https://github.com/Wolfcodes91/Pedalboard-Buddy" target="_blank">Pedalboard Buddy (click for code)</a> 
-          is a drag-and-drop pedalboard builder for musicians 
-          who want to create visual representations of their pedalboards. 
+          <a class="ghLinks" href="https://github.com/Wolfcodes91/Pedalboard-Buddy" target="_blank">Pedalboard Buddy
+            (click for code)</a>
+          is a drag-and-drop pedalboard builder for musicians
+          who want to create visual representations of their pedalboards.
           Pedalboard Buddy allows musicians to create, update, and delete pedalboards,
-          eliminating worries of forgetting a board layout. Users have access to all the pedals 
-          in the database and the ability to add their own pedals too. Checkout Pedalboard Buddy! 
+          eliminating worries of forgetting a board layout. Users have access to all the pedals
+          in the database and the ability to add their own pedals too. Checkout Pedalboard Buddy!
         </p>
         <div class="arrowContainer">
           <a class="arrow" href="#bottomsup">⇩</a>
@@ -135,13 +138,14 @@
       </div>
       <div id="projectInfo">
         <p class="writeUp">
-          <a class="ghLinks" href="https://github.com/andrea-s21/bottoms-up-app" target="_blank">Bottoms Up! (click for code)</a> 
-          is a smart cocktail recommendation app that I co-built with two wonderful developers 
-          - Andrea Sisneros and Raquel Castillo. 
-          Bottoms Up! takes a survey about your day and provides 
+          <a class="ghLinks" href="https://github.com/andrea-s21/bottoms-up-app" target="_blank">Bottoms Up! (click for
+            code)</a>
+          is a smart cocktail recommendation app that I co-built with two wonderful developers
+          - Andrea Sisneros and Raquel Castillo.
+          Bottoms Up! takes a survey about your day and provides
           a curated drink recommendation from an external cocktail database (TheCocktailDB.com).
           Save cocktails, create different lists,
-          add drinks to any and all of your personal lists. 
+          add drinks to any and all of your personal lists.
           Create exciting drink menus for any occasion. Bottoms Up!
         </p>
         <div class="arrowContainer">
@@ -169,13 +173,14 @@
       </div>
       <div id="projectInfo">
         <p class="writeUp">
-          <a class="ghLinks" href="https://github.com/Wolfcodes91/Wolfbergr" target="_blank">Wolfbergr (click for code)</a> is a visual, virtual, and vegan-approved burger builder app! 
+          <a class="ghLinks" href="https://github.com/Wolfcodes91/Wolfbergr" target="_blank">Wolfbergr (click for
+            code)</a> is a visual, virtual, and vegan-approved burger builder app!
           Build from a list of standard ingredients,
-          add any ingredient you can imagine to the custom ingredient list, 
+          add any ingredient you can imagine to the custom ingredient list,
           build your burgers and watch them come to life!
-          Add reviews and comments to any burgers on the burger list. 
-          Make fun or gross things, review your friends creations, and 
-          have lots of fun! 
+          Add reviews and comments to any burgers on the burger list.
+          Make fun or gross things, review your friends creations, and
+          have lots of fun!
         </p>
         <div class="arrowContainer">
           <a class="arrow" href="#simon">⇩</a>
@@ -199,8 +204,9 @@
       </div>
       <div id="projectInfo">
         <p class="writeUp">
-          My personal take on the classic memory game <a class="ghLinks" href="https://github.com/Wolfcodes91/SIMON" target="_blank">Simon (click for code).</a> I changed up the colors, 
-          and added some extra exciting drum&bass music by Squarepusher to keep the 
+          My personal take on the classic memory game <a class="ghLinks" href="https://github.com/Wolfcodes91/SIMON"
+            target="_blank">Simon (click for code).</a> I changed up the colors,
+          and added some extra exciting drum&bass music by Squarepusher to keep the
           intensity pumping. I have never made it past 13 rounds. How far can you get?
         </p>
         <div class="arrowContainer">
@@ -209,6 +215,48 @@
       </div>
     </section>
   </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI="
+    crossorigin="anonymous">
+    </script>
+  <script>
+    $(function () {
+      $('#myName').slideUp(300).slideDown(1000);
+      $('#link1').hide(300).show(1200);
+      $('#link2').hide(300).show(1400);
+      $('#link3').hide(300).show(1600);
+      $('#link4').hide(300).show(1800);
+      $(".linkIcon").on('click', function () {
+        var linkId = $(this).attr('data-panel')
+        $.ajax({
+          type: "GET",
+          url: `https://pokeapi.co/api/v2/pokemon/${linkId}/`,
+          success: function (data) {
+            $(`.${linkId}`).attr('src', `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/shiny/${linkId}.png`)
+              .css({
+                height: '12.5vmin',
+                width: '12.5vmin',
+              });
+          }
+        })
+      })
+      $("#chuckNorris").on('click', function () {
+        $.ajax({
+          type: "GET",
+          url: `https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random`,
+          headers: {
+            accept: 'application/json',
+            'X-RapidAPI-Key': 'c56fadb44dmsh01ae977e0ca0958p1e2b56jsndf5019e045fe',
+            'X-RapidAPI-Host': 'matchilling-chuck-norris-jokes-v1.p.rapidapi.com'
+          },
+          success: function (chuckQuote) {
+            $('#chuckNorris').html(chuckQuote.value)
+          }
+        })
+      })
+    })
+
+  </script>
 </body>
 
 </html>
