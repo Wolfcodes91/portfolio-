@@ -242,6 +242,19 @@
           }
         })
       })
+      $("#profilePic").on('click', function () {
+        $.ajax({
+          type: "GET",
+          url: `https://api.thecatapi.com/v1/images/search`,
+          success: function (data) {
+            $('#profilePic').attr('src', data[0].url)
+              // .css({
+              //   height: '20vmin',
+              //   width: '20vmin',
+              // });
+          }
+        })
+      })
       $("#famousQuote").on('click', function () {
         $.ajax({
           type: "GET",
