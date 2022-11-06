@@ -66,7 +66,7 @@
           ethic.
         </p>
         <h5>About Me:</h5>
-        <p id="chuckNorris">
+        <p id="famousQuote">
           Some of my favorite hobbies are eating, meditating, hiking, spending time with my friends,
           noodling on guitar, watching code tutorials, and solving puzzles.
         </p>
@@ -226,6 +226,8 @@
       $('#link2').hide(300).show(1400);
       $('#link3').hide(300).show(1600);
       $('#link4').hide(300).show(1800);
+      $('#projectsNav').slideUp(300).slideDown(1600);
+      $('#profilePicDiv').hide().fadeIn(3000);
       $(".linkIcon").on('click', function () {
         var linkId = $(this).attr('data-panel')
         $.ajax({
@@ -240,17 +242,13 @@
           }
         })
       })
-      $("#chuckNorris").on('click', function () {
+      $("#famousQuote").on('click', function () {
         $.ajax({
           type: "GET",
-          url: `https://matchilling-chuck-norris-jokes-v1.p.rapidapi.com/jokes/random`,
-          headers: {
-            accept: 'application/json',
-            'X-RapidAPI-Key': "<%= chuckKey %>",
-            'X-RapidAPI-Host': 'matchilling-chuck-norris-jokes-v1.p.rapidapi.com'
-          },
-          success: function (chuckQuote) {
-            $('#chuckNorris').html(chuckQuote.value)
+          url: `https://favqs.com/api/qotd`,
+         
+          success: function (famousQuote) {
+            $('#famousQuote').html(`${famousQuote.quote.body} ~ ${famousQuote.quote.author}`)
           }
         })
       })

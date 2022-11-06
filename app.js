@@ -7,7 +7,7 @@ var logger = require('morgan');
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var $ = require('jquery')
-var dotenv = require("dotenv").config();
+
 var app = express();
 
 // view engine setup
